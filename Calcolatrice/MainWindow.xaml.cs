@@ -40,7 +40,6 @@ namespace Calcolatrice
                 {
                     MessageBox.Show(ex.Message, "errore", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
-
             }
             else
             {

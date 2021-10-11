@@ -1,0 +1,52 @@
+﻿<Window x:Class="InterfacciaAngrafica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfacciaAngrafica"
+        mc:Ignorable="d"
+        Title="angrafica" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Anagrafica"  Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="nome" Grid.Row="1" HorizontalAlignment="Center"/>
+            <TextBox x:Name="txt_nome" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="100" Height="30"/>
+            <Label Content="cognome" Grid.Row="2" HorizontalAlignment="Center" />
+            <TextBox x:Name="txt_Cognome" Grid.Row="2" Grid.Column="1" Width="100" Height="30"/>
+            <Label Content="età" Grid.Row="3" HorizontalAlignment="Center" />
+            <TextBox x:Name="txt_età" Grid.Row="3" Grid.Column="1" Width="100" Height="30"/>
+            <Label Content="Sesso" Grid.Row="4" Grid.ColumnSpan="2"  HorizontalAlignment="Center"/>
+            <RadioButton x:Name="rdb_maschio" Content="M" HorizontalAlignment="Center" Grid.Row="5"/>
+            <RadioButton x:Name="rdb_femmina" Content="F" HorizontalAlignment="Center"  Grid.Column="1" Grid.Row="5"/>
+            <Button x:Name="btn_stampa" Content="Stampa" HorizontalAlignment="Center" Grid.Row="6" Width="75" />
+            <Button x:Name="btn_pulisci" Content="Pulisci" HorizontalAlignment="Center" Grid.Row="6" Width="75" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Clienti presenti" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ListBox x:Name="lstb_risultato" Grid.Row="1" Width="200"/>
+            <Button x:Name="btn_esci" Grid.Row="2" Content="Esci" Width="100" Height="30"/>
+        </Grid>
+    </Grid>
+</Window>
