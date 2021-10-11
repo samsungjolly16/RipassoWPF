@@ -25,7 +25,7 @@
         <TextBox x:Name="txtNum2" Width="100" Height="30" Text=""  Grid.Row="3"/>
         <Button x:Name="btnSomma" Content="Somma" Width="100" Height="30"  Click="btnSomma_Click" Grid.Column="2" Grid.Row="1"/>
         <Button x:Name="btnProdotto" Content="Prodotto" Width="100" Height="30"  Click="btnProdotto_Click" Grid.Column="2" Grid.Row="2"/>
-        <Button x:Name="btnSottrazione"  Content="sottrazione" Width="100" Height="30"  Click="btnSottrazione_Click" Grid.Column="2" Grid.Row="3" />
+        <Button x:Name="btnSottrazione" Content="sottrazione" Width="100" Height="30"  Click="btnSottrazione_Click" Grid.Column="2" Grid.Row="3" />
         <Button x:Name="btnDivisione" Content="divisione" Width="100" Height="30"  Click="btnDivisione_Click" Grid.Column="2" Grid.Row="4" />
         <Label Content="Risultato" Width="100" Height="30" Grid.Row="4"/>
         <Label x:Name="lblRisultato" Content="" Height="30" Width="100"  Grid.Row="4" Grid.Column="1"/>
